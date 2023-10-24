@@ -1,6 +1,10 @@
-import bodyParser from "body-parser";
-import express from "express";
-import pg from "pg";
+
+const express = require('express');
+const session = require('express-session');
+const bodyParser = require('body-parser');
+
+const { pg } = require('pg')
+
 
 // Connect to the database using the DATABASE_URL environment
 //   variable injected by Railway
